@@ -5,7 +5,7 @@
 	<meta name="viewport"
 		content="width=device-width, 
 						initial-scale=1.0">
-	<title>GeeksforGeeks</title>
+	<title>Tech Titans</title>
 	<link href="/css/style.css" rel="stylesheet" ></link>
 </head>
 
@@ -30,34 +30,43 @@
 		<div class="form-section">
 
 			<!-- login form -->
-			<div class="login-box">
-				<input type="email"
-					class="email ele"
-					placeholder="youremail@email.com">
-				<input type="password"
-					class="password ele"
-					placeholder="password">
-				<button class="clkbtn">Login</button>
-			</div>
-
-			<!-- signup form -->
-			<div class="signup-box">
-				<input type="text"
-					class="name ele"
-					placeholder="Enter your name">
-				<input type="email"
-					class="email ele"
-					placeholder="youremail@email.com">
-				<input type="password"
-					class="password ele"
-					placeholder="password">
-				<input type="password"
-					class="password ele"
-					placeholder="Confirm password">
-				<button class="clkbtn">Signup</button>
-			</div>
+            <form action ="/login" method="post" >
+                <div class="login-box">
+                    <input type="email"
+                        class="email ele"
+                        name="email1"
+                        placeholder="youremail@email.com">
+                    <input type="password"
+                        class="password ele"
+                        name="password1"
+                        placeholder="password">
+                    <button class="clkbtn" id="navigateButton" >Login</button>
+                </div>
+            </form>
+			     <!-- signup form -->
+                 <form action="/login" method="post" >
+                    <div class="signup-box">
+                        <input type="text"
+                            class="name ele" name="name"
+                            placeholder="Enter your name">
+                        <input type="email"
+                            class="email ele" name="email"
+                            placeholder="youremail@email.com">
+                        <input type="password"
+                            class="password ele" name="password"
+                            placeholder="password">
+                        
+                        <button class="clkbtn">Signup</button>
+                    </div>
+                </form>
+			
 		</div>
 	</div>
 	<script src="/js/login.js"></script>
+    <script>
+        document.getElementById("navigateButton").addEventListener("click", function() {
+            window.location.href = "/views/dashboard.ejs"; 
+        });
+    </script>
 </body>
 </html>

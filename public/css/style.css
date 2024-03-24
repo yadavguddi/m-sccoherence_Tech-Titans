@@ -17,6 +17,7 @@ body {
 	flex-direction: column;
 	gap: 30px;
 	background-color: rgb(231, 231, 231);
+
 }
 
 header {
@@ -29,7 +30,7 @@ header {
 }
 
 .heading {
-	color: green;
+	color: rgb(33, 114, 146);
 }
 
 .title {
@@ -40,10 +41,13 @@ header {
 .container {
 	height: 600px;
 	width: 500px;
-	background-color: white;
+	
 	box-shadow: 8px 8px 20px rgb(128, 128, 128);
 	position: relative;
 	overflow: hidden;
+    background-color:  linear-gradient(to right,
+    rgb(146, 125, 238),
+			rgb(45, 255, 234));
 }
 
 .btn {
@@ -72,8 +76,8 @@ header {
 	width: 150px;
 	border-radius: 50px;
 	background-image: linear-gradient(to right,
-			rgb(255, 195, 110),
-			rgb(255, 146, 91));
+    rgb(33, 114, 146),
+			rgb(33, 114, 146));
 	position: absolute;
 	top: 20px;
 	left: 100px;
@@ -134,8 +138,8 @@ header {
 	width: 150px;
 	border-radius: 50px;
 	background-image: linear-gradient(to right,
-			rgb(255, 195, 110),
-			rgb(255, 146, 91));
+    rgb(33, 114, 146),
+			rgb(33, 114, 146));
 	font-size: 22px;
 	border: none;
 	cursor: pointer;
